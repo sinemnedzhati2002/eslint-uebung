@@ -1,0 +1,17 @@
+import js from "@eslint/js";
+
+export default [
+  js.configs.recommended,
+  {
+    files: ["**/*.js"],
+    languageOptions: {
+      globals: {
+        console: "readonly",
+      },
+    },
+    rules: {
+      "prefer-const": "warn",
+      eqeqeq: "error",
+    },
+  },
+];
